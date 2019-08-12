@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 随笔 | dtlalala</title>
+  <title>Git的常用命令 | dtlalala</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="lalala&apos;s blog...">
-<meta name="keywords" content="dtlalala">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dtlalala">
-<meta property="og:url" content="http://yoursite.com/tags/随笔/index.html">
+  <meta name="description" content="git的常用命令–dt  初始化本地仓库 git init 查看工作区状态 git status 工作区添加到暂存区(后面的那个是添加该目录下所有文件) git add &amp;lt;filename&amp;gt; git add . 暂存区提交到本地库 git commit -m &amp;quot;mes&amp;quot; 查看状态 git status">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git的常用命令">
+<meta property="og:url" content="http://yoursite.com/2019/08/13/Git的常用命令/index.html">
 <meta property="og:site_name" content="dtlalala">
-<meta property="og:description" content="lalala&apos;s blog...">
+<meta property="og:description" content="git的常用命令–dt  初始化本地仓库 git init 查看工作区状态 git status 工作区添加到暂存区(后面的那个是添加该目录下所有文件) git add &amp;lt;filename&amp;gt; git add . 暂存区提交到本地库 git commit -m &amp;quot;mes&amp;quot; 查看状态 git status">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-12T17:09:59.318Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dtlalala">
-<meta name="twitter:description" content="lalala&apos;s blog...">
+<meta name="twitter:title" content="Git的常用命令">
+<meta name="twitter:description" content="git的常用命令–dt  初始化本地仓库 git init 查看工作区状态 git status 工作区添加到暂存区(后面的那个是添加该目录下所有文件) git add &amp;lt;filename&amp;gt; git add . 暂存区提交到本地库 git commit -m &amp;quot;mes&amp;quot; 查看状态 git status">
   
     <link rel="alternative" href="/atom.xml" title="dtlalala" type="application/atom+xml">
   
@@ -157,61 +158,217 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Git的常用命令" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/12/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-08-12T10:35:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/12/我的第一篇博客文章/">我的第一篇博客文章</a>
+    <h1 class="article-title" itemprop="name">
+      Git的常用命令
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/08/13/Git的常用命令/" class="archive-article-date">
+  	<time datetime="2019-08-12T17:07:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="git的常用命令–dt"><a href="#git的常用命令–dt" class="headerlink" title="git的常用命令–dt"></a>git的常用命令–dt</h3><hr>
+<ul>
+<li>初始化本地仓库 <code>git init</code></li>
+<li>查看工作区状态 <code>git status</code></li>
+<li>工作区添加到暂存区(后面的那个是添加该目录下所有文件) <code>git add &lt;filename&gt;</code> <code>git add .</code></li>
+<li>暂存区提交到本地库 <code>git commit -m &quot;mes&quot;</code></li>
+<li>查看状态 <code>git status</code><a id="more"></a>
+</li>
+</ul>
+<hr>
+<ul>
+<li>查看日志 <code>git log</code></li>
+<li>简洁显示 <code>git log --oneline</code></li>
+<li>显示移动到某个版本需要的步数 <code>git reflog</code></li>
+<li>简洁/完整哈希索引值：回到指定哈希值所对应的版本 <code>git reset --hard</code></li>
+<li>强制工作区、暂存区、本地库为当前HEAD指针所在的版本 <code>git reset --hard HEAD</code></li>
+<li>后退一个版本(^表示退一个版本，^^表示退两个) <code>git reset --hard HEAD^</code></li>
+<li>后退100个版本 <code>git reset --hard HEAD~100</code></li>
+<li>比较工作区和本地库的不同 <code>git diff HEAD -- &lt;filename&gt;</code></li>
+</ul>
+<hr>
+<ul>
+<li>查看所有分支 <code>git branch -v</code></li>
+<li>删除本地分支 <code>git branch -d &lt;分支名&gt;</code></li>
+<li>新建分支 <code>git branch &lt;分支名&gt;</code></li>
+<li>切换分支 <code>git checkout &lt;分支名&gt;</code></li>
+<li>新建分支和切换分支合为一个命令 <code>git checkout -b &lt;分支名&gt;</code></li>
+<li>合并分支 <code>git merge &lt;被合并分支名&gt;</code></li>
+</ul>
+<hr>
+<ul>
+<li>克隆远程库 <code>git clone &lt;地址&gt;</code></li>
+<li>本地库与远程库关联 <code>git remote add &lt;远程库名称-如origin&gt; &lt;你的地址&gt;</code>   –之后，就可以正常地用<code>git push</code>和<code>git pull</code>推送了</li>
+<li>如果在使用<code>git add</code>时候报错 <code>fatal: remote origin already exists.</code>这说明本地库已经关联了一个名叫<code>origin</code>的远程库，此时，可以先用<code>git remote -v</code>查看远程库信息。</li>
+<li>如果有关联，就删除已有的远程库 <code>git remote rm &lt;远程库名称-如origin&gt;</code></li>
+<li>如果要推送到GitHub，使用命令：<br>  <code>git push github(这是个远程库名称而已--上面的是origin) master</code></li>
+<li>如果要推送到码云，使用命令：<br>  <code>git push gitee master</code></li>
+<li>把远程库的修改拉取到本地 <code>git pull &lt;别名&gt; &lt;分支名&gt;</code></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/896043488029600" title="学习更多可去这里" target="_blank" rel="noopener">学习更多可去这里</a></li>
+</ul>
+
+      
+      
+
+    
+    
+      <div hidden="hidden"></div>
+    
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/13/Git的常用命令/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/08/12/我的第一篇博客文章/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<!-- 修改css与js文件如下即可-->
+<link rel="stylesheet" href="//billts.site/extra_css/gitment.css">
+<script src="//billts.site/js/gitment.js"></script>
+<!-- end-->
+
+
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/08/13/Git的常用命令/",
+  owner: 'dtlalala',
+  repo: 'dtlalala.github.io',
+  oauth: {
+    client_id: 'b08f957bbd453499e6d0',
+    client_secret: '2143b81c58547b25b9c39a4da5fe331e2ed86711',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -246,9 +403,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
